@@ -33,8 +33,6 @@ wp plugin uninstall hello.php --deactivate
 # Install vendor plugins
 wp plugin install --activate wordpress-seo
 wp plugin install --activate google-tag-manager
-wp plugin install --activate google-apps-login
-wp plugin install --activate google-drive-embedder
 
 # Install theme
 wp plugin install --activate jetpack
