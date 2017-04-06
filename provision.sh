@@ -37,7 +37,7 @@ wp plugin uninstall akismet --deactivate
 wp plugin uninstall hello.php --deactivate
 
 # Install vendor plugins
-wp plugin install --activate wp-seo
+wp plugin install --activate wordpress-seo
 wp plugin install --activate google-tag-manager
 
 # Apply rewrite rules, updates .htaccess
