@@ -37,6 +37,7 @@ wp plugin install --activate google-apps-login
 wp plugin install --activate google-drive-embedder
 
 # Install theme
+wp plugin install --activate jetpack
 wp theme install --activate argent
 
 # Uninstall other themes
