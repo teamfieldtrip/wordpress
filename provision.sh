@@ -36,6 +36,9 @@ wp plugin install --activate google-tag-manager
 wp plugin install --activate google-apps-login
 wp plugin install --activate google-drive-embedder
 
+# Install theme
+wp theme install --activate argent
+
 # Apply rewrite rules, updates .htaccess
 wp rewrite structure '/%postname%/'
 wp rewrite flush --hard
