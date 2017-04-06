@@ -30,12 +30,13 @@ wp option set blogdescription "The Game"
 wp plugin uninstall akismet --deactivate
 wp plugin uninstall hello.php --deactivate
 
-# Install vendor plugins
-wp plugin install --activate wordpress-seo
-wp plugin install --activate google-tag-manager
-
-# Install theme
+# Install plugins 
 wp plugin install --activate jetpack
+wp plugin install --activate use-any-font
+wp plugin install --activate wordpress-seo
+
+# Install themes
+wp theme install --activate arcade-basic
 wp theme install --activate argent
 
 # Uninstall other themes
