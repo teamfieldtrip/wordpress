@@ -1,17 +1,5 @@
 #!/usr/bin/env bash
 
-if [ -z "$1" ]
-then
-    echo Please specify admin username as first argument
-    exit 255
-fi
-
-if [ -z "$2" ]
-then
-    echo Please specify admin e-mail as second argument
-    exit 255
-fi
-
 # Get verbose
 set -xe
 
@@ -21,6 +9,12 @@ wp core download || true
 # Install wordpress
 if ! wp core is-installed
 then
+    if [ -z "$1" -o -z "$2" ]
+    then
+        echo Please specify admin username and e-mail as two arguments
+        exit 255
+    fi
+
     wp core install \
         --url="https://spirithunt.win" \
         --title="Spirit Hunt" \
