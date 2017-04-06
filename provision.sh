@@ -16,7 +16,7 @@ fi
 set -xe
 
 # Download WordPress
-wp core download
+wp core download || true
 
 # Install wordpress
 if ! wp core is-installed
