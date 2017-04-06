@@ -39,6 +39,11 @@ wp plugin install --activate google-drive-embedder
 # Install theme
 wp theme install --activate argent
 
+# Uninstall other themes
+wp theme uninstall twentyfifteen
+wp theme uninstall twentysixteen
+wp theme uninstall twentyseventeen
+
 # Apply rewrite rules, updates .htaccess
 wp rewrite structure '/%postname%/'
 wp rewrite flush --hard
